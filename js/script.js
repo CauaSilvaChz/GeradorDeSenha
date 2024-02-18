@@ -5,7 +5,6 @@ passwordSize.addEventListener('input', function() {
   showSize.textContent = this.value;
 });
 
-
 let passwordQtd = document.querySelector('#passwordQtd');
 let showQtd = document.querySelector('#showQtd');
 
@@ -49,8 +48,6 @@ const generatePassword = (hasNumbers, hasSymbols, hasUpperCase, Length) => {
     const randomIndex = Math.floor(Math.random() * newArray.length);
     password += newArray[randomIndex];
   }
-
-  
 
   let novaSenha = document.createElement('li');
   novaSenha.classList.add('senha');

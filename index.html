@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de senha</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <main>
+        <div id="container">
+            <div id="titulo">
+                <h2>Gerador de senha</h2>
+            </div>
+            <div id="formGerador">
+                <div id="containerPasswordSize" class="containersRange">
+                    <div id="tituloPasswordSize" class="titulosRange">
+                        <label for="passwordSize" id="labelPasswordSize" class="labelRange">Informe o tamanho da senha</label> 
+                    </div>
+                    <div id="formPasswordSize" class="formsRange">
+                        <input type="range" name="passwordSize" id="passwordSize" class="inputsRange" min="1" max="20"> <span id="showSize" class="showValue"></span>
+                    </div>
+                </div>
+                <div id="containerQtdSenhas" class="containersRange">
+                    <div id="tituloQtdSenha" class="titulosRange">
+                        <label for="passwordQtd" id="labelPasswordQtd" class="labelRange">Informe a quantidade de senhas</label>
+                    </div>
+                    <div id="formPasswordQtd" class="formsRange">
+                        <input type="range" name="passwordQtd" id="passwordQtd" class="inputsRange" min="1" max="10"> <span id="showQtd" class="showValue"></span>
+                    </div>
+                </div>
+                <div id="containerPermissoes">
+                    <div id="containerSymbols" class="containerEachPermissao">
+                        <div id="tituloSymbols" class="tituloEachPermissao">
+                            <label for="symbols" id="labelSymbols" class="labelEachPermissao">Caracteres especiais</label>
+                        </div>
+                        <div id="formSymbols" class="formEachPermissao">
+                            <input type="checkbox" name="symbols" id="symbols" class="inputEachPermissao">
+                        </div>
+                    </div>
+                    <div id="containerNumbers" class="containerEachPermissao">
+                        <div id="tituloNumbers" class="tituloEachPermissao">
+                            <label for="numbers" id="labelNumbers" class="labelEachPermissao">Números</label>
+                        </div>
+                        <div id="formNumbers" class="formEachPermissao">
+                            <input type="checkbox" name="numbers" id="numbers" class="inputEachPermissao">
+                        </div>
+                    </div>
+                    <div id="containerUpperCase" class="containerEachPermissao">
+                        <div id="tituloUpperCase" class="tituloEachPermissao">
+                            <label for="upperCase" id="labelUpperCase" class="labelEachPermissao">Letras maiúsculas</label>
+                        </div>
+                        <div id="formUpperCase" class="formEachPermissao">
+                            <input type="checkbox" name="upperCase" id="upperCase" class="inputEachPermissao">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="containerSaida">
+                <div id="botoes">
+                    <button id="gerarSenha">Gerar senha</button>
+                    <button id="limpar">Limpar formulario</button>
+                </div>
+                <div id="containerLista">
+                    <ul id="listaSenhas">
+                        <li class="senha"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

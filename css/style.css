@@ -1,0 +1,96 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(177, 177, 236);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    min-width: 25%;
+    max-width: max-content;
+    min-height: 50%;
+    max-height: max-content;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1%;
+}
+
+#titulo{
+    text-align: center;
+}
+
+.containersRange{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.labelRange, .inputsRange, .showValue {
+    display: block;
+    font-weight: bold;
+}
+
+.formsRange{
+    text-align: center;
+}
+
+.inputsRange{
+    cursor: pointer;
+}
+
+#containerPermissoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.containerEachPermissao{
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.inputEachPermissao{
+    cursor: pointer;
+}
+
+#botoes{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+button{
+    padding: 10px;
+    background-color: rgb(177, 177, 236);
+    font-weight: bolder;
+    font-style: italic;
+    font-size: 14px;
+    border: 1px solid rgb(177, 177, 236);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#containerLista{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#listaSenhas{
+    list-style: none;
+}
